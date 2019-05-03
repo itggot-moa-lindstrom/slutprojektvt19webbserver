@@ -1,0 +1,23 @@
+a href="/myside/#{users[0]['userid']}" Back to profile
+h1 
+a href="/newpost" Create Post
+h1 
+
+- users.each do |element|
+    label #{element['username']}
+    h5 
+    label #{element['title']} 
+    h5    
+    label #{element['text']}
+    h5
+    - postlikes = 0 
+    - likes.each do |like|
+        - if like["postid"] == element["postid"]
+            - postlikes += 1
+    label #{postlikes}
+    
+    form action='/like' method='post'
+        input type="hidden" name="postid" id="postid" value="#{element['postid']}"
+        button type='submit' id='like' name='like' Like
+    h1 .
+    

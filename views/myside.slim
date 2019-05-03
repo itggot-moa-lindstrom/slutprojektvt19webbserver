@@ -1,0 +1,38 @@
+- if users.length > 0
+    h2 Your profile
+- else
+    h2 No profile found
+    
+h4 First name:
+label #{users[0]['firstname']}
+h4 Last name:
+label #{users[0]['lastname']}
+h4 Username: 
+label #{users[0]['username']}  
+h4 Email: 
+label #{users[0]['email']}  
+h4 Phone: 
+label #{users[0]['phone']}  
+h1 
+
+a href="/myside/#{users[0]['userid']}/edit" Edit your profile
+
+h1 
+
+a href="/posts" All posts
+h1 
+a href="/newpost" Create a post
+h1  
+a href="/login" Log out
+h1 
+
+h3 Your posts:
+- posts.each do |element|
+    h4 Title:
+    label #{element['title']}
+    h4 Text: 
+    label #{element['text']} 
+    h4
+    form action="/editpost/#{element['postid']}" method="get"
+        input type="submit" value="Edit post"
+    h1 .

@@ -1,0 +1,8 @@
+- users = users[0]
+p #{users['postid']}
+form action="/editpost/#{users['postid']}/update" method="post"
+    input name="title" placeholder="Title" type="text" value="#{users["title"]}"
+    input name="text" placeholder="Text" type="text" value="#{users["text"]}"
+   
+    INPUT type="submit" value="Update"
+    

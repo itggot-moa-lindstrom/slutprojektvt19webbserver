@@ -1,0 +1,10 @@
+- users = users[0]
+form action="/myside/#{users['userid']}/update" method="post"
+    input name="firstname" placeholder="First name" type="text" value="#{users["firstname"]}"
+    input name="lastname" placeholder="Last name" type="text" value="#{users["lastname"]}"
+    input name="username" placeholder="Username" type="text" value="#{users["username"]}"
+    input name="email" placeholder="Email" type="text" value="#{users["email"]}"
+    input name="phone" placeholder="Phone" type="text" value="#{users["phone"]}"
+
+    INPUT type="submit" value="Update"
+    
