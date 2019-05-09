@@ -3,7 +3,7 @@
 # Projektplan
 
 ## 1. Projektbeskrivning
-Mitt projekt är en webbsida där man kan lägga upp och gilla inlägg. Har man skapat inlägget själv kan man redigera dem. Man har också en profilsida med användarinformation som man kan redigera. Är man inloggad kan man skapa och gilla inlägg, men som gäst kan man endast läsa andras inlägg.
+Mitt projekt är en webbsida där man kan lägga upp och gilla inlägg. Har man skapat inlägget själv kan man redigera dem. Man har också en profilsida med användarinformation som man kan redigera. Är man inloggad kan man skapa och gilla inlägg, men som gäst kan man endast läsa andras inlägg. Man kan inte gilla ett inlägg fler än en gång.
 
 ## 2. Vyer (sidor)
 Startsida: Här väljer man om man vill logga in, skapa en ny användare eller vara gäst på hemsidan.
