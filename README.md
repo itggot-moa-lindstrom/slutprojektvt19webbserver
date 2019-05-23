@@ -26,7 +26,7 @@ Sekvensdiagram: https://bit.ly/2WpKd2C
 ## 4. Arkitektur (Beskriv filer och mappar)
 I min slutprojekt-mapp finns .vscode, .yarddoc, db, doc, public, views, .byebug_history, controller.rb, Gemfile, Gemfile.lock, model.rb och README.md.
 
-I mappen "db" ligger databasen där all data är samlad.
+I mappen db ligger databasen och här är all data samlad.
 
 I mappen views ligger alla slim-filer.
 
