@@ -19,10 +19,18 @@ Startsida: Här väljer man om man vill logga in, skapa en ny användare eller v
 Sen finns det några sidor med felmeddelanden. Jag har en som kommer upp om man försöker gilla eller skapa ett inlägg utan att vara inloggad, ett som säger till att någonting gick snett och ett som kommer upp om man försöker gilla ett inlägg två gånger med samma konto.
 
 ## 3. Funktionalitet (med sekvensdiagram)
+Beskriv vad sidan gör 
 
-
+Sekvensdiagram: https://bit.ly/2WpKd2C
 
 ## 4. Arkitektur (Beskriv filer och mappar)
+I min slutprojekt-mapp finns .vscode, .yarddoc, db, doc, public, views, .byebug_history, controller.rb, Gemfile, Gemfile.lock, model.rb och README.md.
 
+I mappen "db" ligger databasen där all data är samlad.
+
+I mappen views ligger alla slim-filer.
+
+I controller och model ligger den mesta koden. Jag har delat upp koden i dessa två filer för att göra den enklare att läsa och förstå. I model finns funktionerna med koppling till databasen och dessa funktioner har jag kallat på i controller. I controller ligger även alla sessions och redirects. Koden är strukturerad i ordningen jag skrev den och jag har valt att ha kvar denna struktur för att jag anser att det gör koden enklare att förstå. Detta eftersom jag började skriva det man först kommer in på på hemsidan och fortsatt på detta vis genom hela projektet. Koden ligger alltså i den ordningen man kommer använda den på den på hemsidan.
 
 ## 5. (Databas med ER-diagram)
+https://www.draw.io/?title=Copy%20of%20SlutprojDB.drawio&client=1
